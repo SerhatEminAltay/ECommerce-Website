@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı</title>
+    <link rel="stylesheet" href="Product.css">
+    <link rel="icon" type="image/png" href="../resimler/Site_Küçük_Logo.png">
+</head>
+<body>
+    <div class="container">        
+      <header class="main-header">
+        <a href="../Anasayfa/anasayfa.html">
+          <div class="logo-container">
+            <img src="../resimler/Site_Büyük_Logo.png" alt="ModAnahtar Logo" class="logo">
+          </div>
+        </a>
+        <div class="auth-links">
+          <div id="auth-container">
+            <!-- Giriş Yap veya Hesabım butonu buraya eklenecek -->
+          </div>
+          <a class="cart" href="../Sepetim/Sepetim.html">Sepetim <span id="cart-count" class="cart-count"></span></a>
+        </div>
+      </header>
+    </div>
+      
+    <div class="kategoriler">
+      <ul>
+        <li><a href="../Anasayfa/anasayfa.html">Anasayfa</a></li>
+        <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+        <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+        <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+        <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+      </ul>
+    </div>  
+
+    <div class="product-details">
+      <div class="product-images">
+        <img id="main-image" src="../resimler/product1.jpg" alt="Ürün Resmi">
+        <div class="thumbnail-images" id="thumbnail-images">
+          <!-- Thumbnail resimleri buraya eklenecek -->
+        </div>
+      </div>
+      <div class="product-info">
+        <h1>Ürün Adı</h1>
+        <p class="price">100 TL</p>
+        <p class="description">Ürün açıklaması burada yer alacak.</p>
+        <div class="options">
+          <div class="color-options">
+            <label for="color">Renk:</label>
+            <select id="color" onchange="changeColor(this.value)">
+              <option value="black">Siyah</option>
+              <option value="brown">Kahverengi</option>
+              <!-- Diğer renk seçenekleri buraya eklenebilir -->
+            </select>
+          </div>
+          <div class="size-options">
+            <label for="size">Beden:</label>
+            <select id="size">
+              <!-- Beden seçenekleri buraya eklenecek -->
+            </select>
+          </div>
+        </div>
+        <button class="add-to-cart">Sepete Ekle</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+        <img src="../resimler/kargo kutu.png" alt="kargo kutusu" >
+        <p>App'e özel ücretsiz kargo</p>
+        </div>
+        <div>
+        <img src="../resimler/değişim-iade-yön-çubukarı.png" alt="kargo kutusu" >
+        <p>90 Gün Boyunca Ücretsiz Değişim ve İade</p>
+        </div>
+
+        <div>
+        <img src="../resimler/kargo-araba.png" alt="kargo kutusu" >
+        <p>Aynı Gün ve Hızlı Teslimat Seçenekleri</p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <!-- Sosyal Medya ve QR Kod -->
+        <div class="footer-section">
+          <div class="social-media">
+            <a href="https://www.instagram.com/perchastore2024"><img src="../resimler/insta logo.png" alt="Instagram Logo" class="icon"></a>
+            <a href="https://www.facebook.com"><img src="../resimler/face logo.png" alt="Facebook Logo" class="icon"></a>
+            <a href="https://x.com/perchastore2024"><img src="../resimler/x logo.png" alt="X Logo" class="icon"></a>
+          </div>
+          <img src="../resimler/qr.jpeg" alt="ETBİS QR Kod" class="qr-code">
+        </div>
+    
+        <!-- İletişim -->
+        <div class="footer-section">
+          <h4>İletişim</h4>
+          <ul>
+            <li><a href="#" id="account-link">Hesabım</a></li>
+            <li><a href="https://www.instagram.com/perchastore2024">Bize Ulaşın</a></li>
+            <li><a href="https://gonderitakip.ptt.gov.tr/">Kargo Takip</a></li>
+            <li><a href="https://www.instagram.com/perchastore2024">Yardım</a></li>
+            <!-- <li><a href="#">İade ve Değişim</a></li> -->
+          </ul>
+        </div>
+        
+        <!-- Kategoriler -->
+        <div class="footer-section">
+          <h4>Kategoriler</h4>
+          <ul>
+            <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+            <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+            <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+            <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+          </ul>
+        </div>
+
+        <!-- ModAnahtar -->
+        <div class="footer-section">
+          <h4>Percha Store</h4>
+          <ul>
+            <li><a href="#">Kurumsal</a></li>
+            <li><a href="#">Mağazalarımız</a></li>
+            <li><a href="../Gizlilik Politikası/Gizlilik Politikası.html">Gizlilik Politikası</a></li>
+            <li><a href="#">Bayilik Başvurusu</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+      <script src="Product.js"></script>
+</body>
+</html>

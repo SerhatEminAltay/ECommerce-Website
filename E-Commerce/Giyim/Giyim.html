@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percha</title>
+    <link rel="stylesheet" href="Giyim.css">
+    <link rel="icon" type="image/png" href="../resimler/Site_Küçük_Logo.png">
+</head>
+<body>
+    <div class="container">        
+      <header class="main-header">
+        <a href="../Anasayfa/anasayfa.html">
+          <div class="logo-container">
+            <img src="../resimler/Site_Büyük_Logo.png" alt="ModAnahtar Logo" class="logo">
+          </div>
+        </a>
+        <div class="auth-links">
+          <div id="auth-container">
+            <!-- Giriş Yap veya Hesabım butonu buraya eklenecek -->
+          </div>
+          <a class="cart" href="../Sepetim/Sepetim.html">Sepetim <span id="cart-count" class="cart-count"></span></a>
+        </div>
+      </header>
+    </div>
+      
+    <div class="kategoriler">
+      <ul>
+        <li><a href="../Anasayfa/anasayfa.html">Anasayfa</a></li>
+        <li><a class="active" href="../Giyim/Giyim.html">Giyim</a></li>
+        <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+        <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+        <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+      </ul>
+    </div>  
+
+    <div class="content">
+      <aside class="sidebar">
+        <h3>Filtreler</h3>
+        <div class="filter">
+          <h4>Renk</h4>
+          <ul>
+            <li><input type="checkbox" id="black"><label for="black">Siyah</label></li>
+            <li><input type="checkbox" id="white"><label for="white">Beyaz</label></li>
+            <li><input type="checkbox" id="blue"><label for="blue">Mavi</label></li>
+            <li><input type="checkbox" id="red"><label for="red">Kırmızı</label></li>
+            <li><input type="checkbox" id="green"><label for="green">Yeşil</label></li>
+            <li><input type="checkbox" id="yellow"><label for="yellow">Sarı</label></li>
+            <li><input type="checkbox" id="purple"><label for="purple">Mor</label></li>
+            <li><input type="checkbox" id="orange"><label for="orange">Turuncu</label></li>
+            <li><input type="checkbox" id="pink"><label for="pink">Pembe</label></li>
+            <li><input type="checkbox" id="grey"><label for="grey">Gri</label></li>
+          </ul>
+        </div>
+        <div class="filter">
+          <h4>Fiyat</h4>
+          <ul>
+            <li><input type="checkbox" id="500-650"><label for="500-650">500-650 TL</label></li>
+            <li><input type="checkbox" id="650-800"><label for="650-800">650-800 TL</label></li>
+            <li><input type="checkbox" id="800-950"><label for="800-950">800-950 TL</label></li>
+            <li><input type="checkbox" id="950-1100"><label for="950-1100">950-1100 TL</label></li>
+            <li><input type="checkbox" id="1100+"><label for="1100+">1100+ TL</label></li>
+          </ul>
+        </div>
+      </aside>
+
+<!-- 25.12.2024 -->
+<!-- Resimlerin yollarını güncelledim -->
+
+      <main class="products">
+        <div class="product" data-color="black" data-price="599" onclick="redirectToProduct('clothes', 'black', 'citcit-detayli-tisort', 'Çıtçıt Detaylı Tişört', 599, '../Resimler/oxxo clothes/citcit-detayli-tisort/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/citcit-detayli-tisort/image1.jpg" alt="Çıtçıt Detaylı Tişört">
+          <h4>Çıtçıt Detaylı Tişört</h4>
+          <p>599 TL</p>
+        </div>
+        <div class="product" data-color="grey" data-price="1299" onclick="redirectToProduct('clothes', 'grey', 'fermuarli-bomber-hirka', 'Fermuarlı Bomber Hırka', 1299, '../Resimler/oxxo clothes/fermuarli-bomber-hirka/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/fermuarli-bomber-hirka/image1.jpg" alt="Fermuarlı Bomber Hırka">
+          <h4>Fermuarlı Bomber Hırka</h4>
+          <p>1299 TL</p>
+        </div>
+        <div class="product" data-color="green" data-price="899" onclick="redirectToProduct('clothes', 'green', 'pamuklu-kare-yaka-atlet', 'Pamuklu Kare Yaka Atlet', 899, '../Resimler/oxxo clothes/pamuklu-kare-yaka-atlet/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/pamuklu-kare-yaka-atlet/image1.jpg" alt="Pamuklu Kare Yaka Atlet">
+          <h4>Pamuklu Kare Yaka Atlet</h4>
+          <p>899 TL</p>
+        </div>
+        <div class="product" data-color="black" data-price="599" onclick="redirectToProduct('clothes', 'black', 'polo-yaka-tisort', 'Polo Yaka Tişört', 599, '../Resimler/oxxo clothes/polo-yaka-tisort/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/polo-yaka-tisort/image1.jpg" alt="Polo Yaka Tişört">
+          <h4>Polo Yaka Tişört</h4>
+          <p>599 TL</p>
+        </div>
+        <div class="product" data-color="black" data-price="549" onclick="redirectToProduct('clothes', 'black', 'sifir-yaka-pamuklu-tisort', 'Sıfır Yaka Pamuklu Tişört', 549, '../Resimler/oxxo clothes/sifir-yaka-pamuklu-tisort/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/sifir-yaka-pamuklu-tisort/image1.jpg" alt="Sıfır Yaka Pamuklu Tişört">
+          <h4>Sıfır Yaka Pamuklu Tişört</h4>
+          <p>549 TL</p>
+        </div>
+        <div class="product" data-color="black" data-price="1099" onclick="redirectToProduct('clothes', 'black', 'yuksek-bel-bootcut-pantolon', 'Yüksek Bel Bootcut Pantolon', 1099, '../Resimler/oxxo clothes/yuksek-bel-bootcut-pantolon/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/yuksek-bel-bootcut-pantolon/image1.jpg" alt="Yüksek Bel Bootcut Pantolon">
+          <h4>Yüksek Bel Bootcut Pantolon</h4>
+          <p>1099 TL</p>
+        </div>
+        <div class="product" data-color="blue" data-price="1199" onclick="redirectToProduct('clothes', 'blue', 'yuksek-bel-wide-leg-pantolon', 'Yüksek Bel Wide-Leg Pantolon', 1199, '../Resimler/oxxo clothes/yuksek-bel-wide-leg-pantolon/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/yuksek-bel-wide-leg-pantolon/image1.jpg" alt="Yüksek Bel Wide-Leg Pantolon">
+          <h4>Yüksek Bel Wide-Leg Pantolon</h4>
+          <p>1199 TL</p>
+        </div>
+        <div class="product" data-color="white" data-price="699" onclick="redirectToProduct('clothes', 'white', 'yuksek-yaka-cut-out-tisort', 'Yüksek Yaka Cut-Out Detaylı Tişört', 699, '../Resimler/oxxo clothes/yuksek-yaka-cut-out-tisort/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/yuksek-yaka-cut-out-tisort/image1.jpg" alt="Yüksek Yaka Cut-Out Detaylı Tişört">
+          <h4>Yüksek Yaka Cut-Out Detaylı Tişört</h4>
+          <p>699 TL</p>
+        </div>
+        <div class="product" data-color="grey" data-price="999" onclick="redirectToProduct('clothes', 'grey', 'yumusak-dokulu-kayik-yaka-kazak', 'Yumuşak Dokulu Kayık Yaka Kazak', 999, '../Resimler/oxxo clothes/yumusak-dokulu-kayik-yaka-kazak/image1.jpg')">
+          <img src="../Resimler/oxxo clothes/yumusak-dokulu-kayik-yaka-kazak/image1.jpg" alt="Yumuşak Dokulu Kayık Yaka Kazak">
+          <h4>Yumuşak Dokulu Kayık Yaka Kazak</h4>
+          <p>999 TL</p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+        <img src="../resimler/kargo kutu.png" alt="kargo kutusu" >
+        <p>App'e özel ücretsiz kargo</p>
+        </div>
+        <div>
+        <img src="../resimler/değişim-iade-yön-çubukarı.png" alt="kargo kutusu" >
+        <p>90 Gün Boyunca Ücretsiz Değişim ve İade</p>
+        </div>
+
+        <div>
+        <img src="../resimler/kargo-araba.png" alt="kargo kutusu" >
+        <p>Aynı Gün ve Hızlı Teslimat Seçenekleri</p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <!-- Sosyal Medya ve QR Kod -->
+        <div class="footer-section">
+          <div class="social-media">
+            <a href="https://www.instagram.com/perchastore2024"><img src="../resimler/insta logo.png" alt="Instagram Logo" class="icon"></a>
+            <a href="https://www.facebook.com"><img src="../resimler/face logo.png" alt="Facebook Logo" class="icon"></a>
+            <a href="https://x.com/perchastore2024"><img src="../resimler/x logo.png" alt="X Logo" class="icon"></a>
+          </div>
+          <img src="../resimler/qr.jpeg" alt="ETBİS QR Kod" class="qr-code">
+        </div>
+    
+        <!-- İletişim -->
+        <div class="footer-section">
+          <h4>İletişim</h4>
+          <ul>
+            <li><a href="#" id="account-link">Hesabım</a></li>
+            <li><a href="https://www.instagram.com/perchastore2024">Bize Ulaşın</a></li>
+            <li><a href="https://gonderitakip.ptt.gov.tr/">Kargo Takip</a></li>
+            <li><a href="https://www.instagram.com/perchastore2024">Yardım</a></li>
+            <!-- <li><a href="#">İade ve Değişim</a></li> -->
+          </ul>
+        </div>
+        
+        <!-- Kategoriler -->
+        <div class="footer-section">
+          <h4>Kategoriler</h4>
+          <ul>
+            <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+            <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+            <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+            <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+          </ul>
+        </div>
+
+        <!-- ModAnahtar -->
+        <div class="footer-section">
+          <h4>Percha Store</h4>
+          <ul>
+            <li><a href="#">Kurumsal</a></li>
+            <li><a href="#">Mağazalarımız</a></li>
+            <li><a href="../Gizlilik Politikası/Gizlilik Politikası.html">Gizlilik Politikası</a></li>
+            <li><a href="#">Bayilik Başvurusu</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+      <script src="Giyim.js"></script>
+</body>
+</html>

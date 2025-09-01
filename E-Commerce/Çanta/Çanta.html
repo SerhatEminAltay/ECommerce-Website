@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çanta</title>
+    <link rel="stylesheet" href="Çanta.css">
+    <link rel="icon" type="image/png" href="../resimler/Site_Küçük_Logo.png">
+</head>
+<body>
+    <div class="container">        
+      <header class="main-header">
+        <a href="../Anasayfa/anasayfa.html">
+          <div class="logo-container">
+            <img src="../resimler/Site_Büyük_Logo.png" alt="ModAnahtar Logo" class="logo">
+          </div>
+        </a>
+        <div class="auth-links">
+          <div id="auth-container">
+            <!-- Giriş Yap veya Hesabım butonu buraya eklenecek -->
+          </div>
+          <a class="cart" href="../Sepetim/Sepetim.html">Sepetim <span id="cart-count" class="cart-count"></span></a>
+        </div>
+      </header>
+    </div>
+      
+    <div class="kategoriler">
+      <ul>
+        <li><a href="../Anasayfa/anasayfa.html">Anasayfa</a></li>
+        <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+        <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+        <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+        <li><a class="active" href="Çanta.html">Çanta</a></li>
+      </ul>
+    </div>  
+
+    <div class="content">
+      <aside class="sidebar">
+        <h3>Filtreler</h3>
+        <div class="filter">
+          <h4>Fiyat</h4>
+          <ul>
+            <li><input type="checkbox" id="500-600"><label for="500-600">500-600 TL</label></li>
+            <li><input type="checkbox" id="600-800"><label for="600-800">600-800 TL</label></li>
+            <li><input type="checkbox" id="800-1000"><label for="800-1000">800-1000 TL</label></li>
+            <li><input type="checkbox" id="1000-1200"><label for="1000-1200">1000-1200 TL</label></li>
+            <li><input type="checkbox" id="1200+"><label for="1200+">1200+ TL</label></li>
+          </ul>
+        </div>
+      </aside>
+
+<!-- 25.12.2024 -->
+<!-- Resimlerin yollarını güncelledim -->
+
+      <main class="products">
+        <div class="product" data-price="1199" onclick="redirectToProduct('bags', 'askili-canta-black', 'Askılı Çanta', 1199, '../Resimler/oxxo bags/askili-canta-black/image1.jpg')">
+          <img src="../Resimler/oxxo bags/askili-canta-black/image1.jpg" alt="Askılı Çanta">
+          <h4>Askılı Çanta</h4>
+          <p>1199 TL</p>
+        </div>
+        <div class="product" data-price="899" onclick="redirectToProduct('bags', 'askili-canta', 'Askılı Çanta', 899, '../Resimler/oxxo bags/askili-canta/image1.jpg')">
+          <img src="../Resimler/oxxo bags/askili-canta/image1.jpg" alt="Askılı Çanta">
+          <h4>Askılı Çanta</h4>
+          <p>899 TL</p>
+        </div>
+        <div class="product" data-price="1499" onclick="redirectToProduct('bags', 'hasir-canta', 'Hasır Çanta', 1499, '../Resimler/oxxo bags/hasir-canta/image1.jpg')">
+          <img src="../Resimler/oxxo bags/hasir-canta/image1.jpg" alt="Hasır Çanta">
+          <h4>Hasır Çanta</h4>
+          <p>1499 TL</p>
+        </div>
+        <div class="product" data-price="999" onclick="redirectToProduct('bags', 'leopar-desenli-askili-canta', 'Leopar Desenli Askılı Çanta', 999, '../Resimler/oxxo bags/leopar-desenli-askili-canta/image1.jpg')">
+          <img src="../Resimler/oxxo bags/leopar-desenli-askili-canta/image1.jpg" alt="Leopar Desenli Askılı Çanta">
+          <h4>Leopar Desenli Askılı Çanta</h4>
+          <p>999 TL</p>
+        </div>
+        <div class="product" data-price="599" onclick="redirectToProduct('bags', 'parlak-dokulu-omuz-cantasi', 'Parlak Dokulu Omuz Çantası', 599, '../Resimler/oxxo bags/parlak-dokulu-omuz-cantasi/image1.jpg')">
+          <img src="../Resimler/oxxo bags/parlak-dokulu-omuz-cantasi/image1.jpg" alt="Parlak Dokulu Omuz Çantası">
+          <h4>Parlak Dokulu Omuz Çantası</h4>
+          <p>599 TL</p>
+        </div>
+        <div class="product" data-price="1599" onclick="redirectToProduct('bags', 'toka-detayli-canta', 'Toka Detaylı Çanta', 1599, '../Resimler/oxxo bags/toka-detayli-canta/image1.jpg')">
+          <img src="../Resimler/oxxo bags/toka-detayli-canta/image1.jpg" alt="Toka Detaylı Çanta">
+          <h4>Toka Detaylı Çanta</h4>
+          <p>1599 TL</p>
+        </div>
+        <div class="product" data-price="899" onclick="redirectToProduct('bags', 'tokali-baget-canta', 'Tokalı Baget Çanta', 899, '../Resimler/oxxo bags/tokali-baget-canta/image1.jpg')">
+          <img src="../Resimler/oxxo bags/tokali-baget-canta/image1.jpg" alt="Tokalı Baget Çanta">
+          <h4>Tokalı Baget Çanta</h4>
+          <p>899 TL</p>
+        </div>
+        <div class="product" data-price="1099" onclick="redirectToProduct('bags', 'uzun-askili-canta', 'Uzun Askılı Çanta', 1099, '../Resimler/oxxo bags/uzun-askili-canta/image1.jpg')">
+          <img src="../Resimler/oxxo bags/uzun-askili-canta/image1.jpg" alt="Uzun Askılı Çanta">
+          <h4>Uzun Askılı Çanta</h4>
+          <p>1099 TL</p>
+        </div>
+        <div class="product" data-price="599" onclick="redirectToProduct('bags', 'vegan-deri-sirt-cantasi', 'Vegan Deri Sırt Çantası', 599, '../Resimler/oxxo bags/vegan-deri-sirt-cantasi/image1.jpg')">
+          <img src="../Resimler/oxxo bags/vegan-deri-sirt-cantasi/image1.jpg" alt="Vegan Deri Sırt Çantası">
+          <h4>Vegan Deri Sırt Çantası</h4>
+          <p>599 TL</p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+        <img src="../resimler/kargo kutu.png" alt="kargo kutusu" >
+        <p>App'e özel ücretsiz kargo</p>
+        </div>
+        <div>
+        <img src="../resimler/değişim-iade-yön-çubukarı.png" alt="kargo kutusu" >
+        <p>90 Gün Boyunca Ücretsiz Değişim ve İade</p>
+        </div>
+
+        <div>
+        <img src="../resimler/kargo-araba.png" alt="kargo kutusu" >
+        <p>Aynı Gün ve Hızlı Teslimat Seçenekleri</p>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <!-- Sosyal Medya ve QR Kod -->
+        <div class="footer-section">
+          <div class="social-media">
+            <a href="https://www.instagram.com/perchastore2024"><img src="../resimler/insta logo.png" alt="Instagram Logo" class="icon"></a>
+            <a href="https://www.facebook.com"><img src="../resimler/face logo.png" alt="Facebook Logo" class="icon"></a>
+            <a href="https://x.com/perchastore2024"><img src="../resimler/x logo.png" alt="X Logo" class="icon"></a>
+          </div>
+          <img src="../resimler/qr.jpeg" alt="ETBİS QR Kod" class="qr-code">
+        </div>
+    
+        <!-- İletişim -->
+        <div class="footer-section">
+          <h4>İletişim</h4>
+          <ul>
+            <li><a href="#" id="account-link">Hesabım</a></li>
+            <li><a href="https://www.instagram.com/perchastore2024">Bize Ulaşın</a></li>
+            <li><a href="https://gonderitakip.ptt.gov.tr/">Kargo Takip</a></li>
+            <li><a href="https://www.instagram.com/perchastore2024">Yardım</a></li>
+            <!-- <li><a href="#">İade ve Değişim</a></li> -->
+          </ul>
+        </div>
+        
+        <!-- Kategoriler -->
+        <div class="footer-section">
+          <h4>Kategoriler</h4>
+          <ul>
+            <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+            <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+            <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+            <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+          </ul>
+        </div>
+
+        <!-- ModAnahtar -->
+        <div class="footer-section">
+          <h4>Percha Store</h4>
+          <ul>
+            <li><a href="#">Kurumsal</a></li>
+            <li><a href="#">Mağazalarımız</a></li>
+            <li><a href="../Gizlilik Politikası/Gizlilik Politikası.html">Gizlilik Politikası</a></li>
+            <li><a href="#">Bayilik Başvurusu</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+      <script src="Çanta.js"></script>
+</body>
+</html>

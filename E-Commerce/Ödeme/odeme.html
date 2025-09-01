@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme</title>
+    <link rel="stylesheet" href="odeme.css">
+    <link rel="icon" type="image/png" href="../resimler/Site_Küçük_Logo.png">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <a href="../Anasayfa/anasayfa.html">
+                <div class="logo-container">
+                    <img src="../resimler/Site_Büyük_Logo.png" alt="ModAnahtar Logo" class="logo">
+                </div>
+            </a>
+            <div class="auth-links">
+                <div id="auth-container">
+                    <!-- Giriş Yap veya Hesabım butonu buraya eklenecek -->
+                </div>
+                <a class="cart" href="../Sepetim/Sepetim.html">Sepetim <span id="cart-count" class="cart-count"></span></a>
+            </div>
+        </header>
+    </div>
+      
+    <div class="kategoriler">
+        <ul>
+            <li><a href="../Anasayfa/anasayfa.html">Anasayfa</a></li>
+            <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+            <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+            <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+            <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+        </ul>
+    </div>  
+
+    <div class="content">
+        <div class="payment-info">
+            <h2>Ödeme Bilgileri</h2>
+            <form id="paymentForm">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="first_name">İsim</label>
+                        <input type="text" id="first_name" name="first_name">
+                        <p class="error-message" id="first_name_error">İsim gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Soyisim</label>
+                        <input type="text" id="last_name" name="last_name">
+                        <p class="error-message" id="last_name_error">Soyisim gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon Numarası</label>
+                        <input type="text" id="phone" name="phone">
+                        <p class="error-message" id="phone_error">Telefon numarası gerekli</p>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="city">Şehir</label>
+                        <select id="city" name="city">
+                            <option value="">Şehir seçin</option>
+                            <option value="Adana">Adana</option>
+                            <option value="Adıyaman">Adıyaman</option>
+                            <option value="Afyonkarahisar">Afyonkarahisar</option>
+                            <option value="Ağrı">Ağrı</option>
+                            <option value="Amasya">Amasya</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="Antalya">Antalya</option>
+                            <option value="Artvin">Artvin</option>
+                            <option value="Aydın">Aydın</option>
+                            <option value="Balıkesir">Balıkesir</option>
+                            <option value="Bilecik">Bilecik</option>
+                            <option value="Bingöl">Bingöl</option>
+                            <option value="Bitlis">Bitlis</option>
+                            <option value="Bolu">Bolu</option>
+                            <option value="Burdur">Burdur</option>
+                            <option value="Bursa">Bursa</option>
+                            <option value="Çanakkale">Çanakkale</option>
+                            <option value="Çankırı">Çankırı</option>
+                            <option value="Çorum">Çorum</option>
+                            <option value="Denizli">Denizli</option>
+                            <option value="Diyarbakır">Diyarbakır</option>
+                            <option value="Edirne">Edirne</option>
+                            <option value="Elazığ">Elazığ</option>
+                            <option value="Erzincan">Erzincan</option>
+                            <option value="Erzurum">Erzurum</option>
+                            <option value="Eskişehir">Eskişehir</option>
+                            <option value="Gaziantep">Gaziantep</option>
+                            <option value="Giresun">Giresun</option>
+                            <option value="Gümüşhane">Gümüşhane</option>
+                            <option value="Hakkari">Hakkari</option>
+                            <option value="Hatay">Hatay</option>
+                            <option value="Isparta">Isparta</option>
+                            <option value="Mersin">Mersin</option>
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="İzmir">İzmir</option>
+                            <option value="Kars">Kars</option>
+                            <option value="Kastamonu">Kastamonu</option>
+                            <option value="Kayseri">Kayseri</option>
+                            <option value="Kırklareli">Kırklareli</option>
+                            <option value="Kırşehir">Kırşehir</option>
+                            <option value="Kocaeli">Kocaeli</option>
+                            <option value="Konya">Konya</option>
+                            <option value="Kütahya">Kütahya</option>
+                            <option value="Malatya">Malatya</option>
+                            <option value="Manisa">Manisa</option>
+                            <option value="Kahramanmaraş">Kahramanmaraş</option>
+                            <option value="Mardin">Mardin</option>
+                            <option value="Muğla">Muğla</option>
+                            <option value="Muş">Muş</option>
+                            <option value="Nevşehir">Nevşehir</option>
+                            <option value="Niğde">Niğde</option>
+                            <option value="Ordu">Ordu</option>
+                            <option value="Rize">Rize</option>
+                            <option value="Sakarya">Sakarya</option>
+                            <option value="Samsun">Samsun</option>
+                            <option value="Siirt">Siirt</option>
+                            <option value="Sinop">Sinop</option>
+                            <option value="Sivas">Sivas</option>
+                            <option value="Tekirdağ">Tekirdağ</option>
+                            <option value="Tokat">Tokat</option>
+                            <option value="Trabzon">Trabzon</option>
+                            <option value="Tunceli">Tunceli</option>
+                            <option value="Şanlıurfa">Şanlıurfa</option>
+                            <option value="Uşak">Uşak</option>
+                            <option value="Van">Van</option>
+                            <option value="Yozgat">Yozgat</option>
+                            <option value="Zonguldak">Zonguldak</option>
+                            <option value="Aksaray">Aksaray</option>
+                            <option value="Bayburt">Bayburt</option>
+                            <option value="Karaman">Karaman</option>
+                            <option value="Kırıkkale">Kırıkkale</option>
+                            <option value="Batman">Batman</option>
+                            <option value="Şırnak">Şırnak</option>
+                            <option value="Bartın">Bartın</option>
+                            <option value="Ardahan">Ardahan</option>
+                            <option value="Iğdır">Iğdır</option>
+                            <option value="Yalova">Yalova</option>
+                            <option value="Karabük">Karabük</option>
+                            <option value="Kilis">Kilis</option>
+                            <option value="Osmaniye">Osmaniye</option>
+                            <option value="Düzce">Düzce</option>
+                        </select>
+                        <p class="error-message" id="city_error">Şehir gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Açık Adres</label>
+                        <input type="text" id="address" name="address">
+                        <p class="error-message" id="address_error">Açık adres gerekli</p>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="card_name">Kart Üzerindeki İsim</label>
+                        <input type="text" id="card_name" name="card_name">
+                        <p class="error-message" id="card_name_error">Kart üzerindeki isim gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="card_number">Kart Numarası</label>
+                        <input type="text" id="card_number" name="card_number">
+                        <p class="error-message" id="card_number_error">Kart numarası gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry_date">Son Kullanma Tarihi</label>
+                        <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY">
+                        <p class="error-message" id="expiry_date_error">Son kullanma tarihi gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv">
+                        <p class="error-message" id="cvv_error">CVV gerekli</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="coupon">İndirim Kuponu</label>
+                        <input type="text" id="coupon" name="coupon">
+                        <button type="button" id="apply-coupon" class="apply-coupon-button">Kuponu Uygula</button>
+                        <p class="error-message" id="coupon_error">Geçersiz kupon</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <aside class="order-summary">
+            <h3>Sipariş Özeti</h3>
+            <div class="cart-items">
+                <!-- Sepetteki ürünler buraya eklenecek -->
+            </div>
+            <div class="summary-container">
+                <div class="summary-item">
+                    <span>Sepet</span>
+                    <span id="cart-total">0 TL</span>
+                </div>
+                <div class="summary-item">
+                    <span>Gönderim Tipi</span>
+                    <span>Kargo</span>
+                </div>
+                <div class="summary-item">
+                    <span>Kargo Ücreti</span>
+                    <span>34,95 TL</span>
+                </div>
+                <div class="summary-item" id="discount-section" style="display: none;">
+                    <span>İndirim</span>
+                    <span id="discount-amount">0 TL</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Toplam</span>
+                    <span id="total-price">34,95 TL</span>
+                </div>
+            </div>
+            <button type="submit" class="payment-button">Ödemeyi Onayla</button>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+          <div>
+          <img src="../resimler/kargo kutu.png" alt="kargo kutusu" >
+          <p>App'e özel ücretsiz kargo</p>
+          </div>
+          <div>
+          <img src="../resimler/değişim-iade-yön-çubukarı.png" alt="kargo kutusu" >
+          <p>90 Gün Boyunca Ücretsiz Değişim ve İade</p>
+          </div>
+  
+          <div>
+          <img src="../resimler/kargo-araba.png" alt="kargo kutusu" >
+          <p>Aynı Gün ve Hızlı Teslimat Seçenekleri</p>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <!-- Sosyal Medya ve QR Kod -->
+          <div class="footer-section">
+            <div class="social-media">
+              <a href="https://www.instagram.com/perchastore2024"><img src="../resimler/insta logo.png" alt="Instagram Logo" class="icon"></a>
+              <a href="https://www.facebook.com"><img src="../resimler/face logo.png" alt="Facebook Logo" class="icon"></a>
+              <a href="https://x.com/perchastore2024"><img src="../resimler/x logo.png" alt="X Logo" class="icon"></a>
+            </div>
+            <img src="../resimler/qr.jpeg" alt="ETBİS QR Kod" class="qr-code">
+          </div>
+      
+          <!-- İletişim -->
+          <div class="footer-section">
+            <h4>İletişim</h4>
+            <ul>
+              <li><a href="#" id="account-link">Hesabım</a></li>
+              <li><a href="https://www.instagram.com/perchastore2024">Bize Ulaşın</a></li>
+              <li><a href="https://gonderitakip.ptt.gov.tr/">Kargo Takip</a></li>
+              <li><a href="https://www.instagram.com/perchastore2024">Yardım</a></li>
+              <!-- <li><a href="#">İade ve Değişim</a></li> -->
+            </ul>
+          </div>
+          
+          <!-- Kategoriler -->
+          <div class="footer-section">
+            <h4>Kategoriler</h4>
+            <ul>
+              <li><a href="../Giyim/Giyim.html">Giyim</a></li>
+              <li><a href="../Aksesuar/Aksesuar.html">Aksesuar</a></li>
+              <li><a href="../Ayakkabı/Ayakkabı.html">Ayakkabı</a></li>
+              <li><a href="../Çanta/Çanta.html">Çanta</a></li>
+            </ul>
+          </div>
+
+          <!-- ModAnahtar -->
+          <div class="footer-section">
+            <h4>Percha Store</h4>
+            <ul>
+              <li><a href="#">Kurumsal</a></li>
+              <li><a href="#">Mağazalarımız</a></li>
+              <li><a href="../Gizlilik Politikası/Gizlilik Politikası.html">Gizlilik Politikası</a></li>
+              <li><a href="#">Bayilik Başvurusu</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="odeme.js"></script>
+</body>
+</html>
