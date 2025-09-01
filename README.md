@@ -16,7 +16,7 @@ Ana sayfa, ürün sayfaları, kullanıcı işlemleri (giriş, kayıt, hesap), se
 - **Ayakkabı/** → Ayakkabı ürünleri için kategori sayfası  
 - **Çanta/** → Çanta ürünleri için kategori sayfası  
 - **Giyim/** → Giyim ürünleri için kategori sayfası  
-- **Resimler/** → Görseller sıkıştırılmış dosya halinde  
+- **Resimler/** → Görseller sıkıştırılmış dosya halinde (zip)
 
 ## 🔧 Çalıştırma
 
@@ -45,7 +45,7 @@ It includes basic features such as home page, product pages, user management (lo
 - **Ayakkabı/** → Shoes category page  
 - **Çanta/** → Bags category page  
 - **Giyim/** → Clothing category page  
-- **Resimler/** → Images are in compressed file
+- **Resimler/** → Images are in compressed file (zip)
 
 ## 🔧 How to Run
 
